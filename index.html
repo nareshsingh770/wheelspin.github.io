@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spin Wheel App</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+    integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container-main">
+    <div class="header">
+      <!-- <h3>* <span style="color: #2b8ee2;">Play.</span> <span style="color: #2be294;">Win.</span> <span
+          style="color: #e22b2b;">Shop.</span>*</h3> -->
+      <div class="marquee">
+        <div class="logo">
+          <img src="./assests/logo.jpg" />
+          <img src="./assests/logo2.jpg" />
+          <img src="./assests/logo3.jpg" />
+          <img src="./assests/logo.jpg" />
+          <img src="./assests/logo2.jpg" />
+          <img src="./assests/logo3.jpg" />
+          <img src="./assests/logo.jpg" />
+          <img src="./assests/logo2.jpg" />
+          <img src="./assests/logo3.jpg" />
+        </div>
+      </div>
+
+    </div>
+    <div class="words-wrapper">
+      <div class="main-wrapper">
+        <div class="wrapper">
+          <div class="container">
+            <canvas id="wheel"></canvas>
+            <button id="spin-btn">Spin</button>
+            <img class="arrow" src="spinner-arrow-.svg" alt="spinner-arrow" />
+            <img class="frame-wheel" src="./assests/frame-wheel.png" alt="spinner-frame" />
+          </div>
+          <div id="final-value">
+            <p>Click On The Spin Button To Start</p>
+          </div>
+        </div>
+        <!-- <div class="sidebar">
+          <button class="close-overlay">Close</button>
+          <div class="links">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPrintsPublications%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div class="links">
+            <a class="twitter-timeline" style="width: 340px;"
+              href="https://twitter.com/PrintsPub?ref_src=twsrc%5Etfw">Tweets
+              by PrintsPub</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="social-modal">
+      <div class="modal-wrap">
+        <ul>
+          <li>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a href="https://www.instagram.com/printspublications/" class="social-link">Follow</a>
+          </li>
+          <li>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <a href="https://www.facebook.com/PrintsPublications/" class="social-link">Follow</a>
+          </li>
+          <li>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <a href="https://twitter.com/PrintsPub" class="social-link">Follow</a>
+          </li>
+          <li>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/company/printspublications/mycompany/verification/?viewAsMember=true"
+              class="social-link">Follow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <audio id="myAudiofast">
+    <source src="./assests/fast-tock.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="myAudio">
+    <source src="./assests/tock.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="myAudioWin">
+    <source src="./assests/winner.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- Chart JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <!-- Chart JS Plugin for displaying text over chart -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+  <script src="confetti.js"></script>
+  <!-- Script -->
+  <script src="chances.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

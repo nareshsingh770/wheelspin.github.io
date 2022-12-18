@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./assests/back.png);
+}
+
+.container-main {
+  background: linear-gradient(135deg, #c3a3f1b3, #6414e994);
+}
+
+.words-wrapper {
+  background-image: url(./assests/back-words.png);
+  background-size: cover;
+}
+
+img.frame-wheel {
+  position: absolute;
+  width: 31.5em;
+  top: -6%;
+  right: -5.3%;
+  z-index: 2;
+}
+
+.header h3 {
+  font-size: 43px;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 34.37em;
+  max-height: 90vh;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 1em;
+  box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#wheel {
+  max-height: inherit;
+  width: inherit;
+  top: 0;
+  padding: 0;
+  position: relative;
+  z-index: 4;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#spin-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 26%;
+  width: 26%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  background: radial-gradient(#fdcf3b 50%, #d88a40 85%);
+  color: #c66e16;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  z-index: 4;
+}
+
+img.arrow {
+  position: absolute;
+  width: 4em;
+  top: 43%;
+  right: -8%;
+  z-index: 5;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 60%; */
+  min-width: 450px;
+}
+
+.header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 170px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.modal-wrap ul {
+  display: flex;
+  list-style: none;
+  background: #fff;
+  width: 60%;
+  margin: auto;
+  padding: 50px;
+  border-radius: 10px;
+  min-width: 360px;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#final-value {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 1.5em;
+  color: #202020;
+  font-weight: 500;
+}
+
+canvas#confetti-canvas {
+  position: fixed;
+  top: 0;
+}
+
+.social-modal .modal {
+  width: 70%;
+  margin: 50px auto;
+  height: 90vh;
+  overflow: auto;
+}
+
+.social-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000b3;
+  z-index: 8;
+  display: none;
+}
+
+.modal-wrap ul {
+  display: flex;
+  list-style: none;
+  background: #fff;
+  width: 35%;
+  margin: auto;
+  padding: 100px 20px;
+  border-radius: 10px;
+  min-width: 320px;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-wrap ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.modal-wrap ul li i {
+  font-size: 81px;
+  color: #0070ca;
+}
+
+.modal-wrap ul li a.social-link {
+  padding: 2px 9px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: #0070ca;
+  color: #fff;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1520px;
+  margin: auto;
+  height: 100vh;
+  position: relative;
+}
+
+.twitter-timeline {
+  width: 340px !important;
+  height: 600px !important;
+  overflow: hidden;
+}
+
+.marquee {
+  /* height: 25px; */
+  /* width: 420px; */
+  /* overflow: hidden; */
+  /* position: relative; */
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  /* height: 30px; */
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 16s linear infinite;
+}
+
+.marquee img {
+  float: left;
+  width: 200px;
+  margin: 0 20px
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    font-size: 12px;
+  }
+
+
+  img.frame-wheel {
+    position: absolute;
+    width: 28em;
+    top: -6%;
+    right: -5.3%;
+    z-index: 2;
+  }
+}
